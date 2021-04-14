@@ -47,7 +47,7 @@ class Home {
       <div class="${bor.divClass}">
           <h2>${bor.UseDate}</h2>
           <h3>${bor.tolbor}</h3>
-          <h3>${bor.bagts}</h3>
+          <h3>${bor.Bagts}</h3>
           <h3>${bor.Tohooromj}</h3>
           <button>${bor.Avah}</button>
         </div>
@@ -86,8 +86,8 @@ class Home {
 div{display:inline-block}
 main button{border:rgba(0,0,0,0);background-color:rgba(0,0,0,0);color:#fff;cursor:pointer}
 @media only screen and (min-width: 1278px) {
-.Big-Next{margin-left:33%;cursor:pointer;position:absolute;top:250px;width:auto;font-weight:700;font-size:72px}
-.Big-Prev{margin-left:-36.5%;position:absolute;top:250px;width:auto;font-weight:700;font-size:72px}
+.Big-Next{margin-left:33%;cursor:pointer;position:absolute;top:48%;width:auto;font-weight:700;font-size:72px}
+.Big-Prev{margin-left:-36.5%;position:absolute;top:48%;width:auto;font-weight:700;font-size:72px}
 .News h2{margin-top:1%;margin-bottom:.5%;padding-left:10%;font-family:'Roboto Condensed',sans-serif;font-size:27px}
 .News button{font-size:40px}
 .stars-left-1{margin-right:4.5%}
@@ -348,8 +348,8 @@ history.pushState = function()
     myMain.OnRoute(document.location.pathname);
 }
 
-//myMain.OnRoute(location.pathname);
-//myMain.OnRoute("/");
+myMain.OnRoute(location.pathname);
+myMain.OnRoute("/home");
 //myMain.OnRoute("/Bagts");
 //myMain.OnRoute("/Sale");
 //myMain.OnRoute("/Turees");
