@@ -535,7 +535,87 @@ class Sale {
     }
     Render(){
         return html`
-        <h1>${this.data.sal}</h1>`
+        <style>
+        @import "https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap";
+@import "https://fonts.googleapis.com/css2?family=DotGothic16&family=Oswald:wght@200&display=swap";
+section{width:100%;text-align:center}
+div{display:inline-block}
+main button{border:rgba(0,0,0,0);background-color:rgba(0,0,0,0);color:#fff;cursor:pointer}
+@media only screen and (min-width:1260px) {
+.mainSale{margin-top:8%;margin-bottom:15%}
+section button{font-size:36px}
+.prev1{display:inline-block;float:left;margin-top:12%;margin-left:3%}
+.next1{display:inline-block;float:right;margin-top:12%;margin-right:3%}
+.prev2{display:inline-block;float:left;margin-top:12%;margin-left:8%}
+.next2{display:inline-block;float:right;margin-top:12%;margin-right:3%}
+.prev3{display:inline-block;float:left;margin-top:12%;margin-left:3%}
+.next3{display:inline-block;float:right;margin-top:12%;margin-right:3%}
+.prev4{display:inline-block;float:left;margin-top:12%;margin-left:3%}
+.next4{display:inline-block;float:right;margin-top:12%;margin-right:3%}
+.prev5{display:inline-block;float:left;margin-top:12%;margin-left:3%}
+.next5{display:inline-block;float:right;margin-top:12%;margin-right:3%}
+h1{text-align:left;font-family:'DotGothic16',sans-serif;font-size:40px;padding-left:15%;margin-bottom:.2%}
+h2{text-align:left;font-family:'Oswald',sans-serif;font-size:30px;padding-left:15%;margin-bottom:.2%;margin-top:.2%}
+h3{text-align:left;font-size:25px;padding-left:15%;margin-bottom:.2%;margin-top:.2%}
+h4{font-family:'DotGothic16',sans-serif;font-size:18px;color:#000;transition:font-size color 2s}
+h4:hover{font-size:20px;color:blue}
+section>div>a>img{width:200px;transition:width 2s}
+section>div>a>img:hover{width:220px}
+}
+@media only screen and (min-width:760px) and (max-width:1023px) {
+.mainSale{margin-top:6%;margin-bottom:18%}
+section button{font-size:50px}
+.prev1{display:inline-block;float:left;margin-top:13%;margin-left:1%}
+.next1{display:inline-block;float:right;margin-top:15%;margin-right:1%}
+.prev2{display:inline-block;float:left;margin-top:13%;margin-left:1%}
+.next2{display:inline-block;float:right;margin-top:15%;margin-right:1%}
+.prev3{display:inline-block;float:left;margin-top:13%;margin-left:2%}
+.next3{display:inline-block;float:right;margin-top:15%;margin-right:2%}
+.prev4{display:inline-block;float:left;margin-top:13%;margin-left:2%}
+.next4{display:inline-block;float:right;margin-top:15%;margin-right:2%}
+.prev5{display:inline-block;float:left;margin-top:13%;margin-left:2%}
+.next5{display:inline-block;float:right;margin-top:15%;margin-right:2%}
+h1{text-align:left;font-family:'DotGothic16',sans-serif;font-size:40px;padding-left:15%;margin-bottom:.2%}
+h2{text-align:left;font-family:'Oswald',sans-serif;font-size:30px;padding-left:15%;margin-bottom:.2%;margin-top:.2%}
+h3{text-align:left;font-size:25px;padding-left:15%;margin-bottom:1.2%;margin-top:.2%}
+h4{display:none}
+.zurag5{display:none}
+section>div>a>img{width:150px}
+}
+@media only screen and (min-width:1023px) and (max-width:1259px) {
+.mainSale{margin-top:8%;margin-bottom:15%}
+section button{font-size:36px}
+.prev1{display:inline-block;float:left;margin-top:12%;margin-left:8%}
+.next1{display:inline-block;float:right;margin-top:12%;margin-right:8%}
+.prev2{display:inline-block;float:left;margin-top:12%;margin-left:8%}
+.next2{display:inline-block;float:right;margin-top:12%;margin-right:8%}
+.prev3{display:inline-block;float:left;margin-top:12%;margin-left:8%}
+.next3{display:inline-block;float:right;margin-top:12%;margin-right:8%}
+.prev4{display:inline-block;float:left;margin-top:12%;margin-left:8%}
+.next4{display:inline-block;float:right;margin-top:12%;margin-right:8%}
+.prev5{display:inline-block;float:left;margin-top:12%;margin-left:8%}
+.next5{display:inline-block;float:right;margin-top:12%;margin-right:8%}
+h1{text-align:left;font-family:'DotGothic16',sans-serif;font-size:40px;padding-left:12%;margin-bottom:.2%}
+h2{text-align:left;font-family:'Oswald',sans-serif;font-size:30px;padding-left:4%;padding-left:12%;margin-top:.2%}
+h3{text-align:left;font-size:25px;padding-left:12%;margin-bottom:.2%;margin-top:.2%}
+h4{font-family:'DotGothic16',sans-serif;font-size:12px;color:#000;transition:font-size color 2s}
+h4:hover{font-size:20px;color:blue}
+section>div>a>img{width:120px}
+}
+@media only screen and (min-width:360px) and (max-width:760px) {
+.mainSale{margin-top:18%;margin-bottom:40%}
+section button{display:none}
+h1{text-align:left;font-family:'DotGothic16',sans-serif;font-size:30px;padding-left:15%;margin-bottom:.2%;margin-left:2%}
+h2{text-align:left;font-family:'Oswald',sans-serif;font-size:20px;padding-left:15%;margin-bottom:.2%;margin-top:.2%;margin-left:2%}
+h3{display:none}
+h4{font-family:'DotGothic16',sans-serif;font-size:18px;width:180px;margin:auto;color:#000;transition:font-size color 2s}
+h4:hover{font-size:20px;color:blue}
+.zurag5{display:none}
+section>div>a>img{width:200px;transition:width 2s}
+section>div>a>img:hover{width:210px}
+}
+        </style>
+        <div id="main" style="display:inline-block; width:100%; margin-top:2%;margin-bottom:20%"></div>`
     }
 }
 //#endregion
@@ -1173,7 +1253,7 @@ const bagstDataObj = {
 
 //#region Create Sale
 const saleDataObj = {
-    "sal": "ccccccccccccccccccccccccc"
+    "": ""
 };
 //#endregion
 //#region Create Turees
@@ -1209,7 +1289,6 @@ const tureesDataObj = {
     ]
 };
 //#endregion
-
 //#region Create Tv
 const tvDataObj = {
     title:"Кино суваг",
@@ -1362,6 +1441,7 @@ history.pushState = function()
 myMain.OnRoute(location.pathname);
 //myMain.OnRoute("/home");
 //myMain.OnRoute("/Bagts");
-//myMain.OnRoute("/Sale");
+myMain.OnRoute("/Sale");
 //myMain.OnRoute("/Turees");
-myMain.OnRoute("/Tv");
+//myMain.OnRoute("/Tv");
+
